@@ -1,0 +1,18 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+package-mode = false
+description = "The Data Protection Act, 2021 – powered by MkDocs"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+# Core
+python = "~=3.12"
+
+# Docs
+mkdocs = "^1.5.3"
+mkdocs-git-revision-date-localized-plugin = "^1.2.1"
+mkdocs-glightbox = "^0.3.5"
+mkdocs-material = "^9.5.2"
