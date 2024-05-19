@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: CI
 # For this to work, please ensure that your repository has Pages enabled and configured to build using GitHub Actions
 
 on:
@@ -57,17 +57,17 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
-  deploy:
-    needs: build
-    if: github.ref == 'refs/heads/main'
+  # deploy:
+  #   needs: build
+  #   if: github.ref == 'refs/heads/main'
 
-    # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  #   # Deploy to the github-pages environment
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Deploy Docs to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  #   runs-on: ubuntu-22.04
+  #   steps:
+  #     - name: Deploy Docs to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v4
