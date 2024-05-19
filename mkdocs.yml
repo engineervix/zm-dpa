@@ -39,6 +39,7 @@ extra_css:
 
 plugins:
   - search
+  - social
   - glightbox
   - git-revision-date-localized:
       fallback_to_build_date: true
