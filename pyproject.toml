@@ -4,7 +4,7 @@ requires = ["poetry-core"]
 
 [tool.poetry]
 package-mode = false
-description = "The Data Protection Act, 2021 – powered by MkDocs"
+description = "The Data Protection Act, 2021 – powered by Material for MkDocs"
 readme = "README.md"
 
 [tool.poetry.dependencies]

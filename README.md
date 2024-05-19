@@ -14,7 +14,8 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Introduction](#introduction)
-  - [Why This Project Exists](#why-this-project-exists)
+  - [Why this project exists](#why-this-project-exists)
+  - [How the content was put together](#how-the-content-was-put-together)
 - [Development](#development)
   - [First things first](#first-things-first)
   - [Getting Started](#getting-started)
@@ -26,11 +27,36 @@
 
 ## Introduction
 
-Powered by [MkDocs](https://www.mkdocs.org/), this project transforms a traditionally dense and difficult to navigate PDF of the aforementioned _Act_ into an easily navigable, searchable, and visually appealing online resource.
+Powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), this project transforms a traditionally dense and difficult to navigate PDF of the aforementioned _Act_ into an easily navigable, searchable, and visually appealing online resource.
 
-### Why This Project Exists
+### Why this project exists
 
 Navigating legislative documents can be daunting and often results in a headache. This project was born out of the desire to make the process of understanding the _Act_ more approachable and less painful.
+
+### How the content was put together
+
+This is the approach I took:
+
+1. Download the original [pdf](https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%203%20The%20Data%20Protection%20Act%202021_0.pdf) from the National Assembly of Zambia website.
+2. Use [Adobe Acrobat Online PDF to Word Converter](https://www.adobe.com/uk/acrobat/online/pdf-to-word.html) to convert the pdf to a `docx` file.
+3. Use [pandoc](https://pandoc.org/) to convert the `docx` file to [Markdown](https://daringfireball.net/projects/markdown/) (based on [this gist](https://gist.github.com/plembo/409a8d7b1bae66622dbcd26337bbb185)):
+
+  ```bash
+  pandoc \
+    -t markdown_strict \
+    --extract-media='./attachments/source' \
+    source.docx \
+    -o output.md
+  ```
+
+4. Copy / paste the content, and clean up where the formatting is incorrect.
+
+> [!WARNING]  
+> The formatting of the Pandoc-generated output was not 100% accurate. While I have made every effort to correct formatting issues and other minor bugs, you might encounter some typos, incorrect numbering, or potentially missing content.
+>
+> If you notice any of these issues, please help in fixing them by [opening an issue](https://github.com/engineervix/zm-dpa/issues) or [submitting a pull request](https://github.com/engineervix/zm-dpa/pulls). Your [contributions](#contributing) are greatly appreciated.
+>
+> Thank you for your understanding and support.
 
 ## Development
 
