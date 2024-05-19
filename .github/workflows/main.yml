@@ -48,7 +48,7 @@ jobs:
       - name: Install dependencies
         run: |
           poetry config virtualenvs.in-project true
-          poetry install --only docs --no-root
+          poetry install
 
       - name: Build site (_site directory name is used for Jekyll compatiblity)
         run: |
