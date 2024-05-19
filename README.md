@@ -102,7 +102,7 @@ Now, upon cloning this repository (or forking + cloning your fork), navigate to 
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions are most welcome! A good place to start is by helping out with the unchecked items in the [TODO](#todo) section of this README!
 
-Feel free to check the [issues page](https://github.com/engineervix/zm-dpa/issues) and take a look at the [contributing guide](https://github.com/engineervix/zm-dpa/blob/main/CONTRIBUTING) before you get started.
+Feel free to check the [issues page](https://github.com/engineervix/zm-dpa/issues) and take a look at the [contributing guide](https://github.com/engineervix/zm-dpa/blob/main/CONTRIBUTING.md) before you get started.
 
 ## TODO
 
