@@ -18,6 +18,8 @@
 - [Development](#development)
   - [First things first](#first-things-first)
   - [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [TODO](#todo)
 - [Notice](#notice)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -55,6 +57,27 @@ Now, upon cloning this repository (or forking + cloning your fork), navigate to 
    ```
 
    The documentation will be available at: <http://127.0.0.1:8001/>
+
+## Contributing
+
+<!-- Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)): -->
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions are most welcome! A good place to start is by helping out with the unchecked items in the [TODO](#todo) section of this README!
+
+Feel free to check the [issues page](https://github.com/engineervix/zm-dpa/issues) and take a look at the [contributing guide](https://github.com/engineervix/zm-dpa/blob/main/CONTRIBUTING) before you get started.
+
+## TODO
+
+- [ ] where reference is made to other sections, use hyperlinks to link to those sections
 
 ## Notice
 
