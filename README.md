@@ -56,13 +56,16 @@ This is the approach I took:
 >
 > If you notice any of these issues, please help in fixing them by [opening an issue](https://github.com/engineervix/zm-dpa/issues) or [submitting a pull request](https://github.com/engineervix/zm-dpa/pulls). Your [contributions](#contributing) are greatly appreciated.
 >
-> Thank you for your understanding and support.
+> Gracias
 
 ## Development
 
 ### First things first
 
 You need to have [Python 3.12](https://www.python.org/) and [Poetry](https://python-poetry.org/) installed on your machine. If, for some reason, you have a different python version, you can use [pyenv](https://github.com/pyenv/pyenv) to install multiple python versions on your machine. Once you have Python 3.12 installed, create a [**virtual environment**](https://realpython.com/python-virtual-environments-a-primer/).
+
+> [!NOTE]  
+> If you have a different Python version and/or you don't have Poetry, try installing the python dependencies via `pip install -r requirements.txt`
 
 ### Getting Started
 
